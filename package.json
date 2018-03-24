@@ -1,10 +1,23 @@
 {
-  "name": "camellia",
-  "version": "0.1.0",
+  "name": "floriscope-demo-camellia",
+  "license": "MIT",
+  "author": "Gaëtan Duhamel",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "antd": "^3.3.2",
+    "mapbox-gl": "^0.44.1",
+    "rc-banner-anim": "^1.0.1",
+    "rc-queue-anim": "^1.4.1",
+    "rc-scroll-anim": "^2.3.2",
+    "rc-tween-one": "^1.7.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-headroom": "^2.2.2",
+    "react-instantsearch": "^5.0.1",
+    "react-mapbox-gl": "^3.8.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1"
   },
   "scripts": {
