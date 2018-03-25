@@ -22,11 +22,11 @@ class Content extends React.Component {
           id={`${props.id}-wrapper`}
         >
           <span className="title" key="title" id={`${props.id}-title`}>
-            <img width="75%" src={camellia} />
+            <img width="60%" src={camellia} />
           </span>
-          <p key="content" id={`${props.id}-content`}>
+          <h1 key="content" id={`${props.id}-content`}>
             A graphical journey to Camellia
-          </p>
+          </h1>
         </QueueAnim>
         <TweenOne
           animation={{ y: "-=20", yoyo: true, repeat: -1, duration: 1000 }}

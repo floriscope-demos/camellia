@@ -2,6 +2,7 @@ import React from "react";
 import QueueAnim from "rc-queue-anim";
 import TweenOne from "rc-tween-one";
 import OverPack from "rc-scroll-anim/lib/ScrollOverPack";
+import pic from "../../assets/images/Map.png";
 
 class Content extends React.Component {
   static defaultProps = {
@@ -38,10 +39,12 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              ACCROCHE #2
+              EXPLORE
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。
+              Find out Camellia known locations on a beautifull map and
+              contribute to Camellia location knowledge with our community-based
+              mapping feature.
             </p>
           </QueueAnim>
           <TweenOne
@@ -52,10 +55,7 @@ class Content extends React.Component {
             resetStyleBool
           >
             <span id={`${props.id}-img`}>
-              <img
-                width="100%"
-                src="https://zos.alipayobjects.com/rmsportal/tvQTfCupGUFKSfQ.png"
-              />
+              <img width="100%" src={pic} />
             </span>
           </TweenOne>
         </OverPack>
