@@ -45,30 +45,30 @@ class Footer extends React.Component {
     delete props.isMode;
     const logoContent = {
       img: floriscope,
-      content: "Propulsé par Floriscope"
+      content: "Powered and hosted by Floriscope"
     };
     const dataSource = [
       {
-        title: "Docs",
-        content: "Démarrer avec Arbomap\nGuide API\nTutoriels\n",
-        contentLink: "#\n#\n#\n#"
+        title: "Plante & Cité",
+        content: "Main Site\nTwitter\nVimeo\n",
+        contentLink: "https://www.plante-et-cite.fr\n#\n#\n#"
       },
       {
-        title: "Liens utiles",
-        content: "FAQ\nBlog\nFloriscope",
-        contentLink: "#\n#\n#"
+        title: "Floriscope",
+        content: "Main Site\nBlog\nFAQ",
+        contentLink:
+          "https://www.floriscope.io\nhttp://blog.floriscope.io\nhttp://aide.floriscope.io"
       },
       {
         title: "Developper",
-        content:
-          "Arbomap Web Design\nArbomap Mobile\nArbomap API Gateway\nOpen Source",
-        contentLink: "#\n#\n#\n#"
+        content: "Open Source",
+        contentLink: "https://github.com/floriscope-demos"
       },
       {
-        title: "Social",
+        title: "Follow Us",
         content:
           "https://zos.alipayobjects.com/rmsportal/AXtqVjTullNabao.svg\n",
-        contentLink: "#\n"
+        contentLink: "https://github.com/floriscope\n"
       }
     ];
     const liChildrenToRender = dataSource.map(this.getLiChildren);
@@ -83,7 +83,7 @@ class Footer extends React.Component {
         >
           <li key="logo" id={`${props.id}-logo`}>
             <p className="logo">
-              <img src={logoContent.img} width="100%" />
+              <img src={logoContent.img} width="50%" />
             </p>
             <p>{logoContent.content}</p>
           </li>
@@ -96,7 +96,7 @@ class Footer extends React.Component {
           id={`${props.id}-content`}
         >
           <span>
-            Mentions légales © 2018 Projet Arbomap. Made with 💖 by
+            Mentions légales © 2018 Floriscope. Made with 💖 by
             <a href="https://github.com/gaetan-pc"> Gaëtan</a>. Données ouvertes
           </span>
         </TweenOne>
