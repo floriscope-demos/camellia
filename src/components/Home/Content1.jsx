@@ -2,6 +2,7 @@ import React from "react";
 import QueueAnim from "rc-queue-anim";
 import TweenOne from "rc-tween-one";
 import OverPack from "rc-scroll-anim/lib/ScrollOverPack";
+import pic from "../../assets/images/Search.png";
 
 class Content extends React.Component {
   static defaultProps = {
@@ -37,10 +38,7 @@ class Content extends React.Component {
             resetStyleBool
           >
             <span id={`${props.id}-img`}>
-              <img
-                width="100%"
-                src="https://zos.alipayobjects.com/rmsportal/nLzbeGQLPyBJoli.png"
-              />
+              <img width="100%" src={pic} />
             </span>
           </TweenOne>
           <QueueAnim
@@ -52,10 +50,12 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              ACCROCHE #1
+              DISCOVER
             </h1>
             <p key="p" id={`${props.id}-content`}>
-              云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。
+              Browse Camellia cultivars diversity with a powerfull search
+              engine. Search Camellia by its name or filter your search by
+              Camellia shape, flower color or size.
             </p>
           </QueueAnim>
         </OverPack>

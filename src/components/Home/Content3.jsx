@@ -111,24 +111,16 @@ class Content extends React.Component {
             id={`${props.id}-title`}
             reverseDelay={100}
           >
-            Ce qu'il faut retenir d'Arbomap...
+            Coming soon...
           </TweenOne>
           <TweenOne
-            key="p"
+            key="h2"
             animation={{ ...oneAnim, delay: 100 }}
-            component="p"
+            component="h2"
             id={`${props.id}-titleContent`}
           >
-            基于阿里云强大的基础资源
+            Official release 2nd April 2018
           </TweenOne>
-          <QueueAnim
-            key="ul"
-            type="bottom"
-            className={`${props.className}-contentWrapper`}
-            id={`${props.id}-contentWrapper`}
-          >
-            <ul key="ul">{children}</ul>
-          </QueueAnim>
         </OverPack>
       </div>
     );
